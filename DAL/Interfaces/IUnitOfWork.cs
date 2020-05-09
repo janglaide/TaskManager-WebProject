@@ -6,10 +6,10 @@ namespace DAL.Interfaces
 {
     public interface IUnitOfWork : IDisposable
     {
-        ITaskRepository TaskRepository { get; }
-        ITaskStateRepository TaskStateRepository { get; }
-        IUserRepository UserRepository { get; }
-        IUserTaskRepository UserTaskRepository { get;}
-        void Save();
+        public ITaskRepository TaskRepository { get; }
+        public ITaskStateRepository TaskStateRepository { get; }
+        public IUserRepository UserRepository { get; }
+        public IUserTaskRepository UserTaskRepository { get;}
+        public void Save();
     }
 }

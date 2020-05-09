@@ -6,8 +6,8 @@ namespace DAL.Interfaces
 {
     public interface IRepository<T> where T : class
     {
-        IEnumerable<T> GetAll();
-        T Get(int id);
-        void Create(T item);
+        public IEnumerable<T> GetAll();
+        public T Get(int id);
+        public void Create(T item);
     }
 }
